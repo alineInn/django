@@ -13,7 +13,7 @@
     </div>
 
     <div class="col-8 m-auto pt-3 pb-2 text-center">
-        <a href="/form" class="btn btn-success">Adicionar</a>
+        <a href="/create" class="btn btn-success">Adicionar</a>
     </div>
 
     <div class="col-8 m-auto pt-4 pb-2 text-center">
@@ -34,7 +34,11 @@
               <td>{{dbs.description}}</td>
               <td>{{dbs.price}}</td>
               <td>{{dbs.quantity}}</td>
-              <td>{{dbs.quantity}}</td>
+              <td>
+                  <a href="view/<int:pk>" class="btn btn-dark">Visualizar</a>
+                  <a href="" class="btn btn-primary">Editar</a>
+                  <a href="" class="btn btn-danger">Deletar</a>
+              </td>
             </tr>
           {% endfor %}
 
